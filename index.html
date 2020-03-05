@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=yes"
+    <title>Corel | WinZip | BLACK FRIDAY deal</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+</head>
+<body>
+<!--[if lt IE 10]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a
+        href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+<div id="dpi_define" class="page-wrapper">
+    <div id="size_fix">
+        <section class="page-section">
+            <div class="text-wrapper">
+                <h1 class="section-title">
+                    <p class="locale-text_wrapper-title_1 toTranslate">Early Access to Your</p>
+                    <p class="locale-text_wrapper-title_2 toTranslate">BLACK FRIDAY deal</p>
+                    <p class="locale-text_wrapper-title_3 toTranslate">Eight PC tools. One unbeatable low price.</p>
+                </h1>
+                <p class="section-content locale-text_wrapper-section_contentto toTranslate">Find out how you can increase PC performance and stay protected from cyber criminals and hackers.</p>
+                <div class="btn-timer">
+                    <a id="" class="btn-access locale-text_wrapper-button toTranslate" type="button" onclick="#">access your deal</a>
+                    <p id="hour_counter_element" class="section-time locale-text_wrapper-section_time-default">Hurry - Limited-time only!</p>
+                </div>
+            </div>
+            <div class="img-wrapper cards">
+                <figure class="stock-img card card__one">
+                    <img src="images/3d-right.png" alt="WinZip Ultimate PC Care" class="card__img">
+                </figure>
+            </div>
+        </section>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+        /*Set Timer*/
+        let StartHoursCounter = new TimerEndOfDay('hour_counter_element');
+        StartHoursCounter.getHours();
+
+        /*Set window size*/
+        let windowSize = new BlockSizeDependFromDPI();
+        windowSize.setMainFontSize('size_fix');
+        window.onresize = function () {
+            windowSize.setMainFontSize('size_fix');
+        };
+
+        /*Set lang*/
+        // let manager = new LangManager();
+        // manager.translate();
+
+
+    }, false);
+</script>
+
+<script src="scripts/main.js"></script>
+<!--<script src="scripts/parse.js"></script>-->
+</body>
+</html>

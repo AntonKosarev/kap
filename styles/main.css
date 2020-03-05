@@ -1,0 +1,152 @@
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@font-face {
+    font-family: "Open Sans";
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: "Open Sans - Extrabold";
+    src: url(../fonts/OpenSans-ExtraBold.ttf);
+}
+.page-wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(41, 41, 41);
+    /*background-color: #1b1b1beb;*/
+}
+body {
+    font-size: 16px;
+}
+#size_fix {
+    font-size: 100%;
+}
+.page-section {
+    width: 34.9em;
+    height: 15.4em;
+    padding: 3.7em 1.1em 3.7em 1.9em;
+    position: absolute;
+    /*left: 50%;*/
+    /*transform: translateX(-50%);*/
+    overflow: hidden;
+    left: 0;
+    top: 0;
+
+    background-color: #000000;
+    background-image: url("../images/layer_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.text-wrapper {
+    width: 22.3em;
+    position: absolute;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.img-wrapper {
+    width: 13.2em;
+    position: absolute;
+    right: 0;
+}
+.img-wrapper img {
+    width: 100%;
+}
+.section-title p:nth-child(1) {
+    color: #ffffff;
+    font-family: "Open Sans - Extrabold";
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.11em;
+}
+.section-title p:nth-child(2) {
+    color: #ff1218;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    padding-top: 0.1em;
+    margin-left: -0.1em;
+}
+.section-title p:nth-child(3) {
+    opacity: 0.5;
+    font-family: 'Open Sans', sans-serif;
+    color: #fffefe;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-stretch: extra-condensed;
+    padding-top: 0.7em;
+}
+.section-content {
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.015em;
+    line-height: 1.6em;
+    margin-top: 1.4em;
+}
+.btn-timer {
+    display: inline-flex;
+    flex-direction: column;
+}
+.btn-access {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 17em;
+    height: 3.2em;
+    padding: 0.5em;
+    margin-top: 1.2em;
+    border-width: 0;
+    border-style: none;
+    background-color: #ff1218;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    overflow: hidden;
+    line-height: 1.1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+}
+.btn-access:hover {
+    background-color: #d61216;
+    cursor: pointer;
+}
+.section-time {
+    min-width: 17.5em;
+    color: #ff1218;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.65em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+    padding-top: 1.2em;
+}
+
+/*--------Start 3d animation ------------------------------------------------------------------------------------*/
+.card {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    transform-style: preserve-3d;
+    transform: translatez(2em);
+    transition: transform 200ms ease-out;
+    perspective: 75em;
+}
+
+.card__img {
+    position: relative;
+    height: 110%;
+}
+
+/*--------End 3d animation ------------------------------------------------------------------------------------*/
